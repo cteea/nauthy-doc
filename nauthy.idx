@@ -1,0 +1,39 @@
+Basic usage	index.html#basic-usage	 Basic usage	
+Bytes	index.html#Bytes	nauthy: Bytes	
+HashFunc	index.html#HashFunc	nauthy: HashFunc	
+MD5	index.html#MD5	Algorithm.MD5	
+SHA1	index.html#SHA1	Algorithm.SHA1	
+SHA256	index.html#SHA256	Algorithm.SHA256	
+SHA512	index.html#SHA512	Algorithm.SHA512	
+Algorithm	index.html#Algorithm	nauthy: Algorithm	
+sha1Hash	index.html#sha1Hash	nauthy: sha1Hash	
+md5Hash	index.html#md5Hash	nauthy: md5Hash	
+sha256Hash	index.html#sha256Hash	nauthy: sha256Hash	
+sha512Hash	index.html#sha512Hash	nauthy: sha512Hash	
+OtpValueLen	index.html#OtpValueLen	nauthy: OtpValueLen	
+TimeInterval	index.html#TimeInterval	nauthy: TimeInterval	
+EpochSecond	index.html#EpochSecond	nauthy: EpochSecond	
+HotpT	index.html#HotpT	OtpType.HotpT	
+TotpT	index.html#TotpT	OtpType.TotpT	
+OtpType	index.html#OtpType	nauthy: OtpType	
+Uri	index.html#Uri	nauthy: Uri	
+Hotp	index.html#Hotp	nauthy: Hotp	
+Totp	index.html#Totp	nauthy: Totp	
+Otp	index.html#Otp	nauthy: Otp	
+`$`	index.html#$,Uri	nauthy: `$`(u: Uri): string	
+initHotp	index.html#initHotp,,bool,OtpValueLen,HashFunc	nauthy: initHotp(key: string | Bytes; b32Decode: bool = false; length: OtpValueLen = 6;\n         hashFunc: HashFunc = sha1Hash): Hotp	
+initTotp	index.html#initTotp,,bool,OtpValueLen,TimeInterval,HashFunc,EpochSecond	nauthy: initTotp(key: string | Bytes; b32Decode: bool = true; length: OtpValueLen = 6;\n         interval: TimeInterval = 30; hashFunc: HashFunc = sha1Hash;\n         t0: EpochSecond = 0): Totp	
+newUri	index.html#newUri,string,string	nauthy: newUri(issuer: string; accountname: string): Uri	
+getName	index.html#getName,Uri	nauthy: getName(uri: Uri): string	
+getIssuer	index.html#getIssuer,Uri	nauthy: getIssuer(uri: Uri): string	
+otpFromUri	index.html#otpFromUri,string	nauthy: otpFromUri(uri: string): Otp	
+buildUri	index.html#buildUri,Hotp	nauthy: buildUri(hotp: Hotp): string	
+buildUri	index.html#buildUri,Totp	nauthy: buildUri(totp: Totp): string	
+`$`	index.html#$,Hotp	nauthy: `$`(hotp: Hotp): string	
+`$`	index.html#$,Totp	nauthy: `$`(totp: Totp): string	
+at	index.html#at,Hotp,SomeInteger	nauthy: at(hotp: Hotp; counter: SomeInteger): string	
+at	index.html#at,Totp,EpochSecond	nauthy: at(totp: Totp; utime: EpochSecond): string	
+now	index.html#now,Totp	nauthy: now(totp: Totp): string	
+verify	index.html#verify,Hotp,string,SomeInteger	nauthy: verify(hotp: Hotp; value: string; counter: SomeInteger): bool	
+verify	index.html#verify,Totp,string,EpochSecond	nauthy: verify(totp: Totp; value: string; now: EpochSecond = currentTime()): bool	
+randomBase32	index.html#randomBase32	nauthy: randomBase32(): string	
