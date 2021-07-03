@@ -243,7 +243,7 @@ function main() {
 
 <span class="Comment"># Construct a new TOTP from a URI.</span>
 <span class="Keyword">var</span> <span class="Identifier">otp</span> <span class="Operator">=</span> <span class="Identifier">otpFromUri</span><span class="Punctuation">(</span>
-   <span class="StringLit">&quot;otpauth://totp/ACME%20Co:john@example.com?secret=HXDMVJECJJWSRB3HWIZR4IFUGFTMXBOZ&amp;issuer=ACME%20Co&quot;</span>
+ <span class="StringLit">&quot;otpauth://totp/ACME%20Co:john@example.com?secret=HXDMVJECJJWSRB3HWIZR4IFUGFTMXBOZ&amp;issuer=ACME%20Co&quot;</span>
 <span class="Punctuation">)</span>
 <span class="Identifier">echo</span> <span class="Identifier">otp</span><span class="Operator">.</span><span class="Identifier">totp</span><span class="Operator">.</span><span class="Identifier">now</span><span class="Punctuation">(</span><span class="Punctuation">)</span>
 
@@ -254,87 +254,87 @@ function main() {
 <h1><a class="toc-backref" href="#7">Types</a></h1>
 <dl class="item">
 <a id="Bytes"></a>
-<dt><pre><a href="index.html#Bytes"><span class="Identifier">Bytes</span></a> <span class="Other">=</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">byte</span><span class="Other">]</span></pre></dt>
+<dt><pre><a href="nauthy.html#Bytes"><span class="Identifier">Bytes</span></a> <span class="Other">=</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">byte</span><span class="Other">]</span></pre></dt>
 <dd>
 
 
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy/utils.nim#L9"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy/utils.nim#L9"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy/utils.nim#L9" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy/utils.nim#L9" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="HashFunc"></a>
-<dt><pre><a href="index.html#HashFunc"><span class="Identifier">HashFunc</span></a> <span class="Other">=</span> <span class="Keyword">tuple</span><span class="Other">[</span><span class="Identifier">hash</span><span class="Other">:</span> <span class="Keyword">proc</span> <span class="Other">(</span><span class="Identifier">input</span><span class="Other">:</span> <a href="index.html#Bytes"><span class="Identifier">Bytes</span></a><span class="Other">)</span><span class="Other">:</span> <a href="index.html#Bytes"><span class="Identifier">Bytes</span></a> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">nimcall</span></span><span class="Other">.}</span></span><span class="Other">,</span> <span class="Identifier">blockSize</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">,</span>
+<dt><pre><a href="nauthy.html#HashFunc"><span class="Identifier">HashFunc</span></a> <span class="Other">=</span> <span class="Keyword">tuple</span><span class="Other">[</span><span class="Identifier">hash</span><span class="Other">:</span> <span class="Keyword">proc</span> <span class="Other">(</span><span class="Identifier">input</span><span class="Other">:</span> <a href="nauthy.html#Bytes"><span class="Identifier">Bytes</span></a><span class="Other">)</span><span class="Other">:</span> <a href="nauthy.html#Bytes"><span class="Identifier">Bytes</span></a> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">nimcall</span></span><span class="Other">.}</span></span><span class="Other">,</span> <span class="Identifier">blockSize</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">,</span>
                  <span class="Identifier">name</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">]</span></pre></dt>
 <dd>
 
 
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy/utils.nim#L10"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy/utils.nim#L10"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy/utils.nim#L10" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy/utils.nim#L10" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="Algorithm"></a>
-<dt><pre><a href="index.html#Algorithm"><span class="Identifier">Algorithm</span></a> <span class="Other">=</span> <span class="Keyword">enum</span>
+<dt><pre><a href="nauthy.html#Algorithm"><span class="Identifier">Algorithm</span></a> <span class="Other">=</span> <span class="Keyword">enum</span>
   <span class="Identifier">MD5</span><span class="Other">,</span> <span class="Identifier">SHA1</span><span class="Other">,</span> <span class="Identifier">SHA256</span><span class="Other">,</span> <span class="Identifier">SHA512</span></pre></dt>
 <dd>
 
 
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy/hashfuncs.nim#L6"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy/hashfuncs.nim#L6"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy/hashfuncs.nim#L6" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy/hashfuncs.nim#L6" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="OtpValueLen"></a>
-<dt><pre><a href="index.html#OtpValueLen"><span class="Identifier">OtpValueLen</span></a> <span class="Other">=</span> <span class="Identifier">range</span><span class="Other">[</span><span class="DecNumber">6</span> <span class="Operator">..</span> <span class="DecNumber">10</span><span class="Other">]</span></pre></dt>
+<dt><pre><a href="nauthy.html#OtpValueLen"><span class="Identifier">OtpValueLen</span></a> <span class="Other">=</span> <span class="Identifier">range</span><span class="Other">[</span><span class="DecNumber">6</span> <span class="Operator">..</span> <span class="DecNumber">10</span><span class="Other">]</span></pre></dt>
 <dd>
 
 
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L34"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L34"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L34" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L34" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="TimeInterval"></a>
-<dt><pre><a href="index.html#TimeInterval"><span class="Identifier">TimeInterval</span></a> <span class="Other">=</span> <span class="Identifier">range</span><span class="Other">[</span><span class="DecNumber">1</span> <span class="Operator">..</span> <span class="Identifier">int</span><span class="Other">.</span><span class="Identifier">high</span><span class="Other">]</span></pre></dt>
+<dt><pre><a href="nauthy.html#TimeInterval"><span class="Identifier">TimeInterval</span></a> <span class="Other">=</span> <span class="Identifier">range</span><span class="Other">[</span><span class="DecNumber">1</span> <span class="Operator">..</span> <span class="Identifier">int</span><span class="Other">.</span><span class="Identifier">high</span><span class="Other">]</span></pre></dt>
 <dd>
 
 
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L35"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L35"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L35" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L35" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="EpochSecond"></a>
-<dt><pre><a href="index.html#EpochSecond"><span class="Identifier">EpochSecond</span></a> <span class="Other">=</span> <span class="Identifier">BiggestUInt</span></pre></dt>
+<dt><pre><a href="nauthy.html#EpochSecond"><span class="Identifier">EpochSecond</span></a> <span class="Other">=</span> <span class="Identifier">BiggestUInt</span></pre></dt>
 <dd>
 
 
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L36"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L36"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L36" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L36" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="OtpType"></a>
-<dt><pre><a href="index.html#OtpType"><span class="Identifier">OtpType</span></a> <span class="Other">=</span> <span class="Keyword">enum</span>
+<dt><pre><a href="nauthy.html#OtpType"><span class="Identifier">OtpType</span></a> <span class="Other">=</span> <span class="Keyword">enum</span>
   <span class="Identifier">HotpT</span> <span class="Other">=</span> <span class="StringLit">&quot;hotp&quot;</span><span class="Other">,</span> <span class="Identifier">TotpT</span> <span class="Other">=</span> <span class="StringLit">&quot;totp&quot;</span></pre></dt>
 <dd>
 
 
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L38"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L38"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L38" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L38" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="Uri"></a>
-<dt><pre><a href="index.html#Uri"><span class="Identifier">Uri</span></a> <span class="Other">=</span> <span class="Keyword">ref</span> <span class="Keyword">object</span>
+<dt><pre><a href="nauthy.html#Uri"><span class="Identifier">Uri</span></a> <span class="Other">=</span> <span class="Keyword">ref</span> <span class="Keyword">object</span>
   <span class="Identifier">issuer</span><span class="Other">:</span> <span class="Identifier">string</span>
   <span class="Identifier">accountname</span><span class="Other">:</span> <span class="Identifier">string</span>
 </pre></dt>
@@ -342,50 +342,50 @@ class="link-seesrc" target="_blank">Source</a>
 
 
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L42"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L42"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L42" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L42" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="Hotp"></a>
-<dt><pre><a href="index.html#Hotp"><span class="Identifier">Hotp</span></a> <span class="Other">=</span> <span class="Keyword">tuple</span><span class="Other">[</span><span class="Identifier">key</span><span class="Other">:</span> <a href="index.html#Bytes"><span class="Identifier">Bytes</span></a><span class="Other">,</span> <span class="Identifier">length</span><span class="Other">:</span> <a href="index.html#OtpValueLen"><span class="Identifier">OtpValueLen</span></a><span class="Other">,</span> <span class="Identifier">hashFunc</span><span class="Other">:</span> <a href="index.html#HashFunc"><span class="Identifier">HashFunc</span></a><span class="Other">,</span>
-             <span class="Identifier">initialCounter</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">,</span> <span class="Identifier">uri</span><span class="Other">:</span> <a href="index.html#Uri"><span class="Identifier">Uri</span></a><span class="Other">]</span></pre></dt>
+<dt><pre><a href="nauthy.html#Hotp"><span class="Identifier">Hotp</span></a> <span class="Other">=</span> <span class="Keyword">tuple</span><span class="Other">[</span><span class="Identifier">key</span><span class="Other">:</span> <a href="nauthy.html#Bytes"><span class="Identifier">Bytes</span></a><span class="Other">,</span> <span class="Identifier">length</span><span class="Other">:</span> <a href="nauthy.html#OtpValueLen"><span class="Identifier">OtpValueLen</span></a><span class="Other">,</span> <span class="Identifier">hashFunc</span><span class="Other">:</span> <a href="nauthy.html#HashFunc"><span class="Identifier">HashFunc</span></a><span class="Other">,</span>
+             <span class="Identifier">initialCounter</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">,</span> <span class="Identifier">uri</span><span class="Other">:</span> <a href="nauthy.html#Uri"><span class="Identifier">Uri</span></a><span class="Other">]</span></pre></dt>
 <dd>
 
 
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L46"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L46"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L46" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L46" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="Totp"></a>
-<dt><pre><a href="index.html#Totp"><span class="Identifier">Totp</span></a> <span class="Other">=</span> <span class="Keyword">tuple</span><span class="Other">[</span><span class="Identifier">key</span><span class="Other">:</span> <a href="index.html#Bytes"><span class="Identifier">Bytes</span></a><span class="Other">,</span> <span class="Identifier">length</span><span class="Other">:</span> <a href="index.html#OtpValueLen"><span class="Identifier">OtpValueLen</span></a><span class="Other">,</span> <span class="Identifier">interval</span><span class="Other">:</span> <a href="index.html#TimeInterval"><span class="Identifier">TimeInterval</span></a><span class="Other">,</span>
-             <span class="Identifier">hashFunc</span><span class="Other">:</span> <a href="index.html#HashFunc"><span class="Identifier">HashFunc</span></a><span class="Other">,</span> <span class="Identifier">t0</span><span class="Other">:</span> <a href="index.html#EpochSecond"><span class="Identifier">EpochSecond</span></a><span class="Other">,</span> <span class="Identifier">uri</span><span class="Other">:</span> <a href="index.html#Uri"><span class="Identifier">Uri</span></a><span class="Other">]</span></pre></dt>
+<dt><pre><a href="nauthy.html#Totp"><span class="Identifier">Totp</span></a> <span class="Other">=</span> <span class="Keyword">tuple</span><span class="Other">[</span><span class="Identifier">key</span><span class="Other">:</span> <a href="nauthy.html#Bytes"><span class="Identifier">Bytes</span></a><span class="Other">,</span> <span class="Identifier">length</span><span class="Other">:</span> <a href="nauthy.html#OtpValueLen"><span class="Identifier">OtpValueLen</span></a><span class="Other">,</span> <span class="Identifier">interval</span><span class="Other">:</span> <a href="nauthy.html#TimeInterval"><span class="Identifier">TimeInterval</span></a><span class="Other">,</span>
+             <span class="Identifier">hashFunc</span><span class="Other">:</span> <a href="nauthy.html#HashFunc"><span class="Identifier">HashFunc</span></a><span class="Other">,</span> <span class="Identifier">t0</span><span class="Other">:</span> <a href="nauthy.html#EpochSecond"><span class="Identifier">EpochSecond</span></a><span class="Other">,</span> <span class="Identifier">uri</span><span class="Other">:</span> <a href="nauthy.html#Uri"><span class="Identifier">Uri</span></a><span class="Other">]</span></pre></dt>
 <dd>
 
 
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L53"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L53"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L53" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L53" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="Otp"></a>
-<dt><pre><a href="index.html#Otp"><span class="Identifier">Otp</span></a> <span class="Other">=</span> <span class="Keyword">ref</span> <span class="Keyword">object</span>
-  <span class="Keyword">case</span> <span class="Identifier">otpType</span><span class="Operator">*</span><span class="Other">:</span> <a href="index.html#OtpType"><span class="Identifier">OtpType</span></a>
+<dt><pre><a href="nauthy.html#Otp"><span class="Identifier">Otp</span></a> <span class="Other">=</span> <span class="Keyword">ref</span> <span class="Keyword">object</span>
+  <span class="Keyword">case</span> <span class="Identifier">otpType</span><span class="Operator">*</span><span class="Other">:</span> <a href="nauthy.html#OtpType"><span class="Identifier">OtpType</span></a>
   <span class="Keyword">of</span> <span class="Identifier">HotpT</span><span class="Other">:</span>
-    <span class="Identifier">hotp</span><span class="Operator">*</span><span class="Other">:</span> <a href="index.html#Hotp"><span class="Identifier">Hotp</span></a>
+    <span class="Identifier">hotp</span><span class="Operator">*</span><span class="Other">:</span> <a href="nauthy.html#Hotp"><span class="Identifier">Hotp</span></a>
   <span class="Keyword">of</span> <span class="Identifier">TotpT</span><span class="Other">:</span>
-    <span class="Identifier">totp</span><span class="Operator">*</span><span class="Other">:</span> <a href="index.html#Totp"><span class="Identifier">Totp</span></a>
+    <span class="Identifier">totp</span><span class="Operator">*</span><span class="Other">:</span> <a href="nauthy.html#Totp"><span class="Identifier">Totp</span></a>
   </pre></dt>
 <dd>
 
 
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L61"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L61"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L61" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L61" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 
@@ -394,47 +394,47 @@ class="link-seesrc" target="_blank">Source</a>
 <h1><a class="toc-backref" href="#9">Lets</a></h1>
 <dl class="item">
 <a id="sha1Hash"></a>
-<dt><pre><a href="index.html#sha1Hash"><span class="Identifier">sha1Hash</span></a><span class="Other">:</span> <a href="index.html#HashFunc"><span class="Identifier">HashFunc</span></a> <span class="Other">=</span> <span class="Other">(</span><span class="Identifier">hash</span><span class="Other">:</span> <span class="Identifier">sha1Digest</span><span class="Other">,</span> <span class="Identifier">blockSize</span><span class="Other">:</span> <span class="DecNumber">64</span><span class="Other">,</span> <span class="Identifier">name</span><span class="Other">:</span> <span class="StringLit">&quot;SHA1&quot;</span><span class="Other">)</span></pre></dt>
+<dt><pre><a href="nauthy.html#sha1Hash"><span class="Identifier">sha1Hash</span></a><span class="Other">:</span> <a href="nauthy.html#HashFunc"><span class="Identifier">HashFunc</span></a> <span class="Other">=</span> <span class="Other">(</span><span class="Identifier">hash</span><span class="Other">:</span> <span class="Identifier">sha1Digest</span><span class="Other">,</span> <span class="Identifier">blockSize</span><span class="Other">:</span> <span class="DecNumber">64</span><span class="Other">,</span> <span class="Identifier">name</span><span class="Other">:</span> <span class="StringLit">&quot;SHA1&quot;</span><span class="Other">)</span></pre></dt>
 <dd>
 
 
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy/hashfuncs.nim#L34"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy/hashfuncs.nim#L34"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy/hashfuncs.nim#L34" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy/hashfuncs.nim#L34" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="md5Hash"></a>
-<dt><pre><a href="index.html#md5Hash"><span class="Identifier">md5Hash</span></a><span class="Other">:</span> <a href="index.html#HashFunc"><span class="Identifier">HashFunc</span></a> <span class="Other">=</span> <span class="Other">(</span><span class="Identifier">hash</span><span class="Other">:</span> <span class="Identifier">md5Digest</span><span class="Other">,</span> <span class="Identifier">blockSize</span><span class="Other">:</span> <span class="DecNumber">64</span><span class="Other">,</span> <span class="Identifier">name</span><span class="Other">:</span> <span class="StringLit">&quot;MD5&quot;</span><span class="Other">)</span></pre></dt>
+<dt><pre><a href="nauthy.html#md5Hash"><span class="Identifier">md5Hash</span></a><span class="Other">:</span> <a href="nauthy.html#HashFunc"><span class="Identifier">HashFunc</span></a> <span class="Other">=</span> <span class="Other">(</span><span class="Identifier">hash</span><span class="Other">:</span> <span class="Identifier">md5Digest</span><span class="Other">,</span> <span class="Identifier">blockSize</span><span class="Other">:</span> <span class="DecNumber">64</span><span class="Other">,</span> <span class="Identifier">name</span><span class="Other">:</span> <span class="StringLit">&quot;MD5&quot;</span><span class="Other">)</span></pre></dt>
 <dd>
 
 
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy/hashfuncs.nim#L42"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy/hashfuncs.nim#L42"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy/hashfuncs.nim#L42" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy/hashfuncs.nim#L42" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="sha256Hash"></a>
-<dt><pre><a href="index.html#sha256Hash"><span class="Identifier">sha256Hash</span></a><span class="Other">:</span> <a href="index.html#HashFunc"><span class="Identifier">HashFunc</span></a> <span class="Other">=</span> <span class="Other">(</span><span class="Identifier">hash</span><span class="Other">:</span> <span class="Identifier">sha256Digest</span><span class="Other">,</span> <span class="Identifier">blockSize</span><span class="Other">:</span> <span class="DecNumber">64</span><span class="Other">,</span> <span class="Identifier">name</span><span class="Other">:</span> <span class="StringLit">&quot;SHA256&quot;</span><span class="Other">)</span></pre></dt>
+<dt><pre><a href="nauthy.html#sha256Hash"><span class="Identifier">sha256Hash</span></a><span class="Other">:</span> <a href="nauthy.html#HashFunc"><span class="Identifier">HashFunc</span></a> <span class="Other">=</span> <span class="Other">(</span><span class="Identifier">hash</span><span class="Other">:</span> <span class="Identifier">sha256Digest</span><span class="Other">,</span> <span class="Identifier">blockSize</span><span class="Other">:</span> <span class="DecNumber">64</span><span class="Other">,</span> <span class="Identifier">name</span><span class="Other">:</span> <span class="StringLit">&quot;SHA256&quot;</span><span class="Other">)</span></pre></dt>
 <dd>
 
 
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy/hashfuncs.nim#L49"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy/hashfuncs.nim#L49"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy/hashfuncs.nim#L49" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy/hashfuncs.nim#L49" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="sha512Hash"></a>
-<dt><pre><a href="index.html#sha512Hash"><span class="Identifier">sha512Hash</span></a><span class="Other">:</span> <a href="index.html#HashFunc"><span class="Identifier">HashFunc</span></a> <span class="Other">=</span> <span class="Other">(</span><span class="Identifier">hash</span><span class="Other">:</span> <span class="Identifier">sha512Digest</span><span class="Other">,</span> <span class="Identifier">blockSize</span><span class="Other">:</span> <span class="DecNumber">128</span><span class="Other">,</span> <span class="Identifier">name</span><span class="Other">:</span> <span class="StringLit">&quot;SHA512&quot;</span><span class="Other">)</span></pre></dt>
+<dt><pre><a href="nauthy.html#sha512Hash"><span class="Identifier">sha512Hash</span></a><span class="Other">:</span> <a href="nauthy.html#HashFunc"><span class="Identifier">HashFunc</span></a> <span class="Other">=</span> <span class="Other">(</span><span class="Identifier">hash</span><span class="Other">:</span> <span class="Identifier">sha512Digest</span><span class="Other">,</span> <span class="Identifier">blockSize</span><span class="Other">:</span> <span class="DecNumber">128</span><span class="Other">,</span> <span class="Identifier">name</span><span class="Other">:</span> <span class="StringLit">&quot;SHA512&quot;</span><span class="Other">)</span></pre></dt>
 <dd>
 
 
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy/hashfuncs.nim#L56"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy/hashfuncs.nim#L56"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy/hashfuncs.nim#L56" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy/hashfuncs.nim#L56" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 
@@ -443,192 +443,192 @@ class="link-seesrc" target="_blank">Source</a>
 <h1><a class="toc-backref" href="#12">Procs</a></h1>
 <dl class="item">
 <a id="$,Uri"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#%24%2CUri"><span class="Identifier">`$`</span></a><span class="Other">(</span><span class="Identifier">u</span><span class="Other">:</span> <a href="index.html#Uri"><span class="Identifier">Uri</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#%24%2CUri"><span class="Identifier">`$`</span></a><span class="Other">(</span><span class="Identifier">u</span><span class="Other">:</span> <a href="nauthy.html#Uri"><span class="Identifier">Uri</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
 
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L66"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L66"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L66" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L66" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="initHotp,,bool,OtpValueLen,HashFunc"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#initHotp%2C%2Cbool%2COtpValueLen%2CHashFunc"><span class="Identifier">initHotp</span></a><span class="Other">(</span><span class="Identifier">key</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Operator">|</span> <a href="index.html#Bytes"><span class="Identifier">Bytes</span></a><span class="Other">;</span> <span class="Identifier">b32Decode</span><span class="Other">:</span> <span class="Identifier">bool</span> <span class="Other">=</span> <span class="Identifier">false</span><span class="Other">;</span>
-              <span class="Identifier">length</span><span class="Other">:</span> <a href="index.html#OtpValueLen"><span class="Identifier">OtpValueLen</span></a> <span class="Other">=</span> <span class="DecNumber">6</span><span class="Other">;</span> <span class="Identifier">hashFunc</span><span class="Other">:</span> <a href="index.html#HashFunc"><span class="Identifier">HashFunc</span></a> <span class="Other">=</span> <span class="Identifier">sha1Hash</span><span class="Other">)</span><span class="Other">:</span> <a href="index.html#Hotp"><span class="Identifier">Hotp</span></a></pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#initHotp%2C%2Cbool%2COtpValueLen%2CHashFunc"><span class="Identifier">initHotp</span></a><span class="Other">(</span><span class="Identifier">key</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Operator">|</span> <a href="nauthy.html#Bytes"><span class="Identifier">Bytes</span></a><span class="Other">;</span> <span class="Identifier">b32Decode</span><span class="Other">:</span> <span class="Identifier">bool</span> <span class="Other">=</span> <span class="Identifier">false</span><span class="Other">;</span>
+              <span class="Identifier">length</span><span class="Other">:</span> <a href="nauthy.html#OtpValueLen"><span class="Identifier">OtpValueLen</span></a> <span class="Other">=</span> <span class="DecNumber">6</span><span class="Other">;</span> <span class="Identifier">hashFunc</span><span class="Other">:</span> <a href="nauthy.html#HashFunc"><span class="Identifier">HashFunc</span></a> <span class="Other">=</span> <span class="Identifier">sha1Hash</span><span class="Other">)</span><span class="Other">:</span> <a href="nauthy.html#Hotp"><span class="Identifier">Hotp</span></a></pre></dt>
 <dd>
 
 Constructs a new HOTP. <tt class="docutils literal"><span class="pre">sha1Hash</span></tt> is the default but other hash modes are also available: <tt class="docutils literal"><span class="pre">md5Hash</span></tt>, <tt class="docutils literal"><span class="pre">sha256Hash</span></tt> and <tt class="docutils literal"><span class="pre">sha512Hash</span></tt>. Custom hash functions are also accepted. If the given <tt class="docutils literal"><span class="pre">key</span></tt> is base32-encoded, give the <tt class="docutils literal"><span class="pre">b32Decode</span></tt> argument as <tt class="docutils literal"><span class="pre">true</span></tt>.
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L69"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L69"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L69" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L69" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="initTotp,,bool,OtpValueLen,TimeInterval,HashFunc,EpochSecond"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#initTotp%2C%2Cbool%2COtpValueLen%2CTimeInterval%2CHashFunc%2CEpochSecond"><span class="Identifier">initTotp</span></a><span class="Other">(</span><span class="Identifier">key</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Operator">|</span> <a href="index.html#Bytes"><span class="Identifier">Bytes</span></a><span class="Other">;</span> <span class="Identifier">b32Decode</span><span class="Other">:</span> <span class="Identifier">bool</span> <span class="Other">=</span> <span class="Identifier">true</span><span class="Other">;</span>
-              <span class="Identifier">length</span><span class="Other">:</span> <a href="index.html#OtpValueLen"><span class="Identifier">OtpValueLen</span></a> <span class="Other">=</span> <span class="DecNumber">6</span><span class="Other">;</span> <span class="Identifier">interval</span><span class="Other">:</span> <a href="index.html#TimeInterval"><span class="Identifier">TimeInterval</span></a> <span class="Other">=</span> <span class="DecNumber">30</span><span class="Other">;</span>
-              <span class="Identifier">hashFunc</span><span class="Other">:</span> <a href="index.html#HashFunc"><span class="Identifier">HashFunc</span></a> <span class="Other">=</span> <span class="Identifier">sha1Hash</span><span class="Other">;</span> <span class="Identifier">t0</span><span class="Other">:</span> <a href="index.html#EpochSecond"><span class="Identifier">EpochSecond</span></a> <span class="Other">=</span> <span class="DecNumber">0</span><span class="Other">)</span><span class="Other">:</span> <a href="index.html#Totp"><span class="Identifier">Totp</span></a></pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#initTotp%2C%2Cbool%2COtpValueLen%2CTimeInterval%2CHashFunc%2CEpochSecond"><span class="Identifier">initTotp</span></a><span class="Other">(</span><span class="Identifier">key</span><span class="Other">:</span> <span class="Identifier">string</span> <span class="Operator">|</span> <a href="nauthy.html#Bytes"><span class="Identifier">Bytes</span></a><span class="Other">;</span> <span class="Identifier">b32Decode</span><span class="Other">:</span> <span class="Identifier">bool</span> <span class="Other">=</span> <span class="Identifier">true</span><span class="Other">;</span>
+              <span class="Identifier">length</span><span class="Other">:</span> <a href="nauthy.html#OtpValueLen"><span class="Identifier">OtpValueLen</span></a> <span class="Other">=</span> <span class="DecNumber">6</span><span class="Other">;</span> <span class="Identifier">interval</span><span class="Other">:</span> <a href="nauthy.html#TimeInterval"><span class="Identifier">TimeInterval</span></a> <span class="Other">=</span> <span class="DecNumber">30</span><span class="Other">;</span>
+              <span class="Identifier">hashFunc</span><span class="Other">:</span> <a href="nauthy.html#HashFunc"><span class="Identifier">HashFunc</span></a> <span class="Other">=</span> <span class="Identifier">sha1Hash</span><span class="Other">;</span> <span class="Identifier">t0</span><span class="Other">:</span> <a href="nauthy.html#EpochSecond"><span class="Identifier">EpochSecond</span></a> <span class="Other">=</span> <span class="DecNumber">0</span><span class="Other">)</span><span class="Other">:</span> <a href="nauthy.html#Totp"><span class="Identifier">Totp</span></a></pre></dt>
 <dd>
 
 Constructs a new TOTP. <tt class="docutils literal"><span class="pre">sha1Hash</span></tt> is the default but other hash modes are also available: <tt class="docutils literal"><span class="pre">md5Hash</span></tt>, <tt class="docutils literal"><span class="pre">sha256Hash</span></tt> and <tt class="docutils literal"><span class="pre">sha512Hash</span></tt>. Custom hash functions are also accepted. If the given <tt class="docutils literal"><span class="pre">key</span></tt> is base32-encoded, give the <tt class="docutils literal"><span class="pre">b32Decode</span></tt> argument as <tt class="docutils literal"><span class="pre">true</span></tt>.
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L81"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L81"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L81" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L81" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="newUri,string,string"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#newUri%2Cstring%2Cstring"><span class="Identifier">newUri</span></a><span class="Other">(</span><span class="Identifier">issuer</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">accountname</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="index.html#Uri"><span class="Identifier">Uri</span></a> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#newUri%2Cstring%2Cstring"><span class="Identifier">newUri</span></a><span class="Other">(</span><span class="Identifier">issuer</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">accountname</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="nauthy.html#Uri"><span class="Identifier">Uri</span></a> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
 Constructs a new URI.
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L94"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L94"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L94" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L94" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="getName,Uri"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#getName%2CUri"><span class="Identifier">getName</span></a><span class="Other">(</span><span class="Identifier">uri</span><span class="Other">:</span> <a href="index.html#Uri"><span class="Identifier">Uri</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#getName%2CUri"><span class="Identifier">getName</span></a><span class="Other">(</span><span class="Identifier">uri</span><span class="Other">:</span> <a href="nauthy.html#Uri"><span class="Identifier">Uri</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
 Extract account name from a URI.
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L102"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L102"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L102" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L102" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="getIssuer,Uri"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#getIssuer%2CUri"><span class="Identifier">getIssuer</span></a><span class="Other">(</span><span class="Identifier">uri</span><span class="Other">:</span> <a href="index.html#Uri"><span class="Identifier">Uri</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#getIssuer%2CUri"><span class="Identifier">getIssuer</span></a><span class="Other">(</span><span class="Identifier">uri</span><span class="Other">:</span> <a href="nauthy.html#Uri"><span class="Identifier">Uri</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
 Extract issuer from a URI.
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L106"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L106"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L106" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L106" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="otpFromUri,string"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#otpFromUri%2Cstring"><span class="Identifier">otpFromUri</span></a><span class="Other">(</span><span class="Identifier">uri</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="index.html#Otp"><span class="Identifier">Otp</span></a> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ValueError</span><span class="Other">,</span> <span class="Identifier">KeyError</span><span class="Other">,</span>
+<dt><pre><span class="Keyword">proc</span> <a href="#otpFromUri%2Cstring"><span class="Identifier">otpFromUri</span></a><span class="Other">(</span><span class="Identifier">uri</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <a href="nauthy.html#Otp"><span class="Identifier">Otp</span></a> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ValueError</span><span class="Other">,</span> <span class="Identifier">KeyError</span><span class="Other">,</span>
     <span class="Identifier">CatchableError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
 Initialize HOTP/TOTP from a URI.
 <p><strong class="examples_text">Example:</strong></p>
 <pre class="listing"><span class="Keyword">let</span><span class="Whitespace"> </span><span class="Identifier">otp</span><span class="Whitespace"> </span><span class="Operator">=</span><span class="Whitespace"> </span><span class="Identifier">otpFromUri</span><span class="Punctuation">(</span><span class="Whitespace">
-    </span><span class="StringLit">&quot;otpauth://totp/ACME:john@dot.com?secret=HXDMVJECJJWSRB3HWIZR4IFUGFTMXBOZ&amp;issuer=ACME&quot;</span><span class="Whitespace">
-    </span><span class="Punctuation">)</span><span class="Whitespace">
+  </span><span class="StringLit">&quot;otpauth://totp/ACME:john@dot.com?secret=HXDMVJECJJWSRB3HWIZR4IFUGFTMXBOZ&amp;issuer=ACME&quot;</span><span class="Whitespace">
+  </span><span class="Punctuation">)</span><span class="Whitespace">
 </span><span class="Keyword">var</span><span class="Whitespace"> </span><span class="Identifier">totp</span><span class="Whitespace"> </span><span class="Operator">=</span><span class="Whitespace"> </span><span class="Identifier">otp</span><span class="Operator">.</span><span class="Identifier">totp</span><span class="Whitespace">
 </span><span class="Identifier">echo</span><span class="Whitespace"> </span><span class="Identifier">totp</span><span class="Operator">.</span><span class="Identifier">now</span><span class="Punctuation">(</span><span class="Punctuation">)</span></pre>
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L110"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L110"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L110" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L110" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="buildUri,Hotp"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#buildUri%2CHotp"><span class="Identifier">buildUri</span></a><span class="Other">(</span><span class="Identifier">hotp</span><span class="Other">:</span> <a href="index.html#Hotp"><span class="Identifier">Hotp</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#buildUri%2CHotp"><span class="Identifier">buildUri</span></a><span class="Other">(</span><span class="Identifier">hotp</span><span class="Other">:</span> <a href="nauthy.html#Hotp"><span class="Identifier">Hotp</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
 Build URI from HOTP.
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L147"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L147"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L147" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L147" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="buildUri,Totp"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#buildUri%2CTotp"><span class="Identifier">buildUri</span></a><span class="Other">(</span><span class="Identifier">totp</span><span class="Other">:</span> <a href="index.html#Totp"><span class="Identifier">Totp</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#buildUri%2CTotp"><span class="Identifier">buildUri</span></a><span class="Other">(</span><span class="Identifier">totp</span><span class="Other">:</span> <a href="nauthy.html#Totp"><span class="Identifier">Totp</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
 Build URI from TOTP.
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L169"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L169"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L169" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L169" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="$,Hotp"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#%24%2CHotp"><span class="Identifier">`$`</span></a><span class="Other">(</span><span class="Identifier">hotp</span><span class="Other">:</span> <a href="index.html#Hotp"><span class="Identifier">Hotp</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#%24%2CHotp"><span class="Identifier">`$`</span></a><span class="Other">(</span><span class="Identifier">hotp</span><span class="Other">:</span> <a href="nauthy.html#Hotp"><span class="Identifier">Hotp</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
 This is the same as <tt class="docutils literal"><span class="pre">hotp.buildUri()</span></tt>.
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L191"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L191"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L191" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L191" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="$,Totp"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#%24%2CTotp"><span class="Identifier">`$`</span></a><span class="Other">(</span><span class="Identifier">totp</span><span class="Other">:</span> <a href="index.html#Totp"><span class="Identifier">Totp</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#%24%2CTotp"><span class="Identifier">`$`</span></a><span class="Other">(</span><span class="Identifier">totp</span><span class="Other">:</span> <a href="nauthy.html#Totp"><span class="Identifier">Totp</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
 This is the same as <tt class="docutils literal"><span class="pre">totp.buildUri()</span></tt>.
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L195"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L195"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L195" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L195" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="at,Hotp,SomeInteger"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#at%2CHotp%2CSomeInteger"><span class="Identifier">at</span></a><span class="Other">(</span><span class="Identifier">hotp</span><span class="Other">:</span> <a href="index.html#Hotp"><span class="Identifier">Hotp</span></a><span class="Other">;</span> <span class="Identifier">counter</span><span class="Other">:</span> <span class="Identifier">SomeInteger</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span></pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#at%2CHotp%2CSomeInteger"><span class="Identifier">at</span></a><span class="Other">(</span><span class="Identifier">hotp</span><span class="Other">:</span> <a href="nauthy.html#Hotp"><span class="Identifier">Hotp</span></a><span class="Other">;</span> <span class="Identifier">counter</span><span class="Other">:</span> <span class="Identifier">SomeInteger</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span></pre></dt>
 <dd>
 
 Get HOTP value at <tt class="docutils literal"><span class="pre">counter</span></tt>.
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L219"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L219"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L219" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L219" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="at,Totp,EpochSecond"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#at%2CTotp%2CEpochSecond"><span class="Identifier">at</span></a><span class="Other">(</span><span class="Identifier">totp</span><span class="Other">:</span> <a href="index.html#Totp"><span class="Identifier">Totp</span></a><span class="Other">;</span> <span class="Identifier">utime</span><span class="Other">:</span> <a href="index.html#EpochSecond"><span class="Identifier">EpochSecond</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">Exception</span><span class="Other">]</span><span class="Other">,</span>
+<dt><pre><span class="Keyword">proc</span> <a href="#at%2CTotp%2CEpochSecond"><span class="Identifier">at</span></a><span class="Other">(</span><span class="Identifier">totp</span><span class="Other">:</span> <a href="nauthy.html#Totp"><span class="Identifier">Totp</span></a><span class="Other">;</span> <span class="Identifier">utime</span><span class="Other">:</span> <a href="nauthy.html#EpochSecond"><span class="Identifier">EpochSecond</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">Exception</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">RootEffect</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
 Get TOTP value at time <tt class="docutils literal"><span class="pre">utime</span></tt>.
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L224"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L224"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L224" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L224" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="now,Totp"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#now%2CTotp"><span class="Identifier">now</span></a><span class="Other">(</span><span class="Identifier">totp</span><span class="Other">:</span> <a href="index.html#Totp"><span class="Identifier">Totp</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">Exception</span><span class="Other">]</span><span class="Other">,</span>
+<dt><pre><span class="Keyword">proc</span> <a href="#now%2CTotp"><span class="Identifier">now</span></a><span class="Other">(</span><span class="Identifier">totp</span><span class="Other">:</span> <a href="nauthy.html#Totp"><span class="Identifier">Totp</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">Exception</span><span class="Other">]</span><span class="Other">,</span>
                                <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">RootEffect</span><span class="Other">,</span> <span class="Identifier">TimeEffect</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
 Get TOTP value at current time.
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L228"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L228"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L228" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L228" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="verify,Hotp,string,SomeInteger"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#verify%2CHotp%2Cstring%2CSomeInteger"><span class="Identifier">verify</span></a><span class="Other">(</span><span class="Identifier">hotp</span><span class="Other">:</span> <a href="index.html#Hotp"><span class="Identifier">Hotp</span></a><span class="Other">;</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">counter</span><span class="Other">:</span> <span class="Identifier">SomeInteger</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">bool</span></pre></dt>
+<dt><pre><span class="Keyword">proc</span> <a href="#verify%2CHotp%2Cstring%2CSomeInteger"><span class="Identifier">verify</span></a><span class="Other">(</span><span class="Identifier">hotp</span><span class="Other">:</span> <a href="nauthy.html#Hotp"><span class="Identifier">Hotp</span></a><span class="Other">;</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">counter</span><span class="Other">:</span> <span class="Identifier">SomeInteger</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">bool</span></pre></dt>
 <dd>
 
 Verify that the given HOTP <tt class="docutils literal"><span class="pre">value</span></tt> is correct.
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L232"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L232"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L232" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L232" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="verify,Totp,string,EpochSecond"></a>
-<dt><pre><span class="Keyword">proc</span> <a href="#verify%2CTotp%2Cstring%2CEpochSecond"><span class="Identifier">verify</span></a><span class="Other">(</span><span class="Identifier">totp</span><span class="Other">:</span> <a href="index.html#Totp"><span class="Identifier">Totp</span></a><span class="Other">;</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">now</span><span class="Other">:</span> <a href="index.html#EpochSecond"><span class="Identifier">EpochSecond</span></a> <span class="Other">=</span> <span class="Identifier">currentTime</span><span class="Other">(</span><span class="Other">)</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">bool</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
+<dt><pre><span class="Keyword">proc</span> <a href="#verify%2CTotp%2Cstring%2CEpochSecond"><span class="Identifier">verify</span></a><span class="Other">(</span><span class="Identifier">totp</span><span class="Other">:</span> <a href="nauthy.html#Totp"><span class="Identifier">Totp</span></a><span class="Other">;</span> <span class="Identifier">value</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">now</span><span class="Other">:</span> <a href="nauthy.html#EpochSecond"><span class="Identifier">EpochSecond</span></a> <span class="Other">=</span> <span class="Identifier">currentTime</span><span class="Other">(</span><span class="Other">)</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">bool</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
     <span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">Exception</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">RootEffect</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
 Verify that the given TOTP <tt class="docutils literal"><span class="pre">value</span></tt> is correct.
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L236"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L236"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L236" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L236" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 <a id="randomBase32"></a>
@@ -637,9 +637,9 @@ class="link-seesrc" target="_blank">Source</a>
 
 Generates a random 16-characters Base-32 encoded string. Compatible with other OTP apps such as Google Authenticator and Authy.
 &nbsp;&nbsp;<a
-href="https://github.com/lzoz/nauthy/tree/v0.1.0/nauthy/nauthy.nim#L240"
+href="https://github.com/rookiebiscuit/nauthy/tree/v0.1.1/src/nauthy.nim#L240"
 class="link-seesrc" target="_blank">Source</a>
-<a href="https://github.com/lzoz/nauthy/edit/devel/nauthy/nauthy.nim#L240" class="link-seesrc" target="_blank" >Edit</a>
+<a href="https://github.com/rookiebiscuit/nauthy/edit/devel/src/nauthy.nim#L240" class="link-seesrc" target="_blank" >Edit</a>
 
 </dd>
 
@@ -652,7 +652,7 @@ class="link-seesrc" target="_blank">Source</a>
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2021-02-02 09:12:58 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2021-07-03 04:22:10 UTC</small>
       </div>
     </div>
   </div>
